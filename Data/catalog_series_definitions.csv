@@ -1,0 +1,11 @@
+what,frequency,fred_series_id,padd_region,best_free_span_approx,regional_notes,database
+WTI (Cushing),Daily,DCOILWTICO,,"~1986 to today (~40 y)","Single US benchmark hub, not multi-region crude",FRED
+WTI (Cushing),Weekly,WCOILWTICO,,"~1986 to today (~40 y)","Single US benchmark hub, not multi-region crude",FRED
+Henry Hub gas (LA / Gulf-linked benchmark),Daily,DHHNGSP,,"~1997 to today (~29 y)","One national benchmark, not East vs West wholesale gas",FRED
+Henry Hub gas (LA / Gulf-linked benchmark),Weekly,WHHNGSP,,"~1997 to today (~29 y)","One national benchmark, not East vs West wholesale gas",FRED
+Retail gasoline by PADD (East Coast),Weekly,GASALLECW,PADD I East,"~1993 to today (~33 y)","Regional oil product (retail pump), not natural gas",FRED
+Retail gasoline by PADD (Midwest),Weekly,GASALLMWW,PADD II Midwest,"~1993 to today (~33 y)","Regional oil product (retail pump), not natural gas",FRED
+Retail gasoline by PADD (Gulf Coast),Weekly,GASALLGCW,PADD III Gulf Coast,"~1993 to today (~33 y)","Regional oil product (retail pump), not natural gas",FRED
+Retail gasoline by PADD (Rockies),Weekly,GASALLRMW,PADD IV Rockies,"~1993 to today (~33 y)","Regional oil product (retail pump), not natural gas",FRED
+Retail gasoline by PADD (West Coast),Weekly,GASALLWCW,PADD V West Coast,"~1993 to today (~33 y)","Regional oil product (retail pump), not natural gas",FRED
+Monthly US Henry Hub (IMF via FRED),Monthly,PNGASUSUSDM,,"1992 to today (~34 y)","Single hub",FRED

@@ -1,0 +1,76 @@
+Links grouped by output CSV. Primary source for these series is FRED (Federal Reserve Economic Data);
+underlying spot definitions are documented on each FRED series page (often sourced from EIA).
+
+Actual observations are stored in the four tidy CSVs below (columns: observation_date, fred_series_id,
+value, units). Regenerate them with:
+  python scripts/export_catalog_timeseries.py
+
+Series definitions / spans / regions are in: data/catalog_series_definitions.csv
+
+================================================================================
+FILE: data/wti_cushing.csv
+================================================================================
+
+FRED series pages (human-readable metadata):
+  https://fred.stlouisfed.org/series/DCOILWTICO
+  https://fred.stlouisfed.org/series/WCOILWTICO
+
+FRED graph CSV exports (machine-readable, same as eda_commodities.py pattern):
+  https://fred.stlouisfed.org/graph/fredgraph.csv?id=DCOILWTICO
+  https://fred.stlouisfed.org/graph/fredgraph.csv?id=WCOILWTICO
+
+EIA petroleum navigation (related spot series context):
+  https://www.eia.gov/dnav/pet/
+
+================================================================================
+FILE: data/henry_hub_gas.csv
+================================================================================
+
+FRED series pages:
+  https://fred.stlouisfed.org/series/DHHNGSP
+  https://fred.stlouisfed.org/series/WHHNGSP
+
+FRED graph CSV exports:
+  https://fred.stlouisfed.org/graph/fredgraph.csv?id=DHHNGSP
+  https://fred.stlouisfed.org/graph/fredgraph.csv?id=WHHNGSP
+
+EIA natural gas price history (Henry Hub context):
+  https://www.eia.gov/dnav/ng/hist/rngwhhdD.htm
+
+================================================================================
+FILE: data/retail_gasoline_padd.csv
+================================================================================
+
+FRED release (Gasoline and Diesel Fuel Update — lists related weekly series):
+  https://fred.stlouisfed.org/release?rid=183
+
+FRED series pages:
+  https://fred.stlouisfed.org/series/GASALLECW
+  https://fred.stlouisfed.org/series/GASALLMWW
+  https://fred.stlouisfed.org/series/GASALLGCW
+  https://fred.stlouisfed.org/series/GASALLRMW
+  https://fred.stlouisfed.org/series/GASALLWCW
+
+FRED graph CSV exports:
+  https://fred.stlouisfed.org/graph/fredgraph.csv?id=GASALLECW
+  https://fred.stlouisfed.org/graph/fredgraph.csv?id=GASALLMWW
+  https://fred.stlouisfed.org/graph/fredgraph.csv?id=GASALLGCW
+  https://fred.stlouisfed.org/graph/fredgraph.csv?id=GASALLRMW
+  https://fred.stlouisfed.org/graph/fredgraph.csv?id=GASALLWCW
+
+EIA gasoline & diesel retail context:
+  https://www.eia.gov/petroleum/gasdiesel/
+
+================================================================================
+FILE: data/monthly_us_henry_hub_imf.csv
+================================================================================
+
+FRED series page:
+  https://fred.stlouisfed.org/series/PNGASUSUSDM
+
+FRED graph CSV export:
+  https://fred.stlouisfed.org/graph/fredgraph.csv?id=PNGASUSUSDM
+
+IMF Primary Commodity Prices (upstream methodology for IMF benchmarks):
+  https://www.imf.org/en/research/commodity-prices
+  https://data.imf.org/Datasets/PCPS
